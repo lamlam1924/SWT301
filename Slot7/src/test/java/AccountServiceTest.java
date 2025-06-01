@@ -20,7 +20,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class AccountServiceTest {
 
     private final AccountService accountService = new AccountService();
-    private final List<String> resultLines = new ArrayList<>(); //dùng để kưu test case
+    private final List<String> resultLines = new ArrayList<>(); //dùng để lưu test case
 
     //chạy trước tất cả test case, thêm dong tiêu đề vào List
     @BeforeAll
@@ -122,7 +122,4 @@ public class AccountServiceTest {
     void testRegisterAccount_Success() {
         assertTrue(accountService.registerAccount("user1", "password123", "user1@example.com"));
     }
-
-
-
 }
